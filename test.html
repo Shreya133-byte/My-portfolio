@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shreya Raj | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #96d6d8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #00fff7;
+    }
+
+    .neon {
+      text-shadow: 0 0 5px #065e5b, 0 0 10px #08b6b6;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 4px solid #d3e27e;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #e6fa2e;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #00fff7;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00ffae;
+    }
+
+    .btn-neon {
+      background: none;
+      border: 2px solid #00fff7;
+      color: #00fff7;
+      transition: 0.3s;
+    }
+
+    .btn-neon:hover {
+      background-color: #00fff7;
+      color: #000;
+    }
+
+    footer {
+      border-top: 1px solid #444;
+      margin-top: 50px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .form-control {
+      background-color: #1c1c1c;
+      color: white;
+      border: 1px solid #00fff7;
+    }
+
+    .form-control:focus {
+      border-color: #00fff7;
+      box-shadow: 0 0 8px #00fff7;
+    }
+  </style>
+</head>
+<body>
+<h1 style="text-align:center;">MY Portfolio using CSS</h1>
+  <div class="container py-5">
+    <div class="d-flex flex-column flex-md-row align-items-center">
+      <img src="profileShreya.jpg" alt="Shreya Raj" class="profile-img me-md-4 mb-4 mb-md-0"/>
+
+      <div id="sectionHome">
+        <h1 class="neon" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Shreya Raj</h1>
+        <h4>B.Tech IT | AI & ML Enthusiast</h4>
+        <p>Hello! I'm a passionate learner currently pursuing B.Tech in Information Technology.<br>
+             I’m especially interested in Artificial Intelligence and Machine Learning,<br>
+              and I love solving real-world problems using technology.</p>
+        <button class="btn btn-neon mt-2" onclick="showMore()">My Skills and Hobbis</button>
+        <div id="extraInfo" style="display:none; margin-top:10px;">
+          <p>I also enjoy sketching<br>
+             Watching anime<br>
+             Designing UI/UX projects<br>
+             listening To music<br>
+             Let’s build something cool together!</p>
+          <h4>MY SKILLS</h4>
+            <ol>
+                <li>Communication</li>
+                <li>Sketching</li>
+                <li>Traditional Art[Madhubani]</li>
+                <li>Coding:Python,C,C++</li>
+                <li>Web development:HTML,HTTPs,CSS</li>
+            </ol>
+            <button  id="extraInfo" style="display:none; margin-top:10px;">Back to Home</button>
+            <p></p>
+        </div>
+        
+      </div>
+    </div>
+
+    <hr class="my-5 border-light"/>
+
+    <section id="projects">
+      <h2 class="neon text-center mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card bg-dark text-light h-100 border-info">
+            <div class="card-body">
+              <h5 class="card-title">Manga App UI Design</h5>
+              <p class="card-text">Created custom UI for a manga reader app as part of the UI/UX mega workshop by Arman Maheswari Sir. <br>
+                Redesigned layout for better flow and user experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light h-100 border-info">
+            <div class="card-body">
+              <h5 class="card-title">AI Chatbot for Teens</h5>
+              <p class="card-text">Built an emotional support chatbot using prompt engineering to provide mental health aid and<br>
+                 daily mood tracking for teenagers. Developed during Gen AI Workshop.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light h-100 border-info">
+            <div class="card-body">
+              <h5 class="card-title">Yoga web</h5>
+              <p class="card-text">Built a yoga website using HTML and css, mentoning <br>
+                 importance of yoga and yoga asans .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="my-5 border-light"/>
+    <section id="Courses and Education">
+      <h2 class="neon text-center mb-4">My Courses and Education</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card bg-dark text-light h-100 border-info">
+            <div class="card-body">
+              <h5 class="card-title">Education</h5>
+              <p class="card-text">School:P.M Shri Kendriya Vidyala No.1 A.F.S BHUJ<br>
+                <strong>Class 10th: Passed with 1st Division</strong><br>
+                <strong>Class 12th: Passed with 1st Division</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-light h-100 border-info">
+            <div class="card-body">
+              <h5 class="card-title">Courses</h5>
+              <p class="card-text">C++: Cisco online course<br>
+                Full-Stack development:Mimo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p class="mt-3 text-muted" style="text-align:center;">Refrence: Youtube</p>
+
+
+    <hr class="my-5 border-light"/>
+
+    <section id="contact">
+      <h2 class="neon text-center mb-4">Contact Me</h2>
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name" required/>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Your Email" required/>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-neon">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="mt-5">
+      <h4 class="neon">Connect with Me</h4>
+      <div class="social-icons mt-2">
+        <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+        <a href="https://wa.me/91yourwhatsapplink" target="_blank">WhatsApp</a>
+      </div>
+      <p class="mt-3 text-muted">© 2025 Shreya Raj | All Rights Reserved</p>
+      <p></p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showMore() {
+      const extra = document.getElementById("extraInfo");
+      extra.style.display = extra.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
